@@ -1,0 +1,10 @@
+Instructions
+
+Taking the 2016 US Federal Presidential Election Dataset for Bernie Sanders, located at http://fec.gov/disclosurep/PDownload.do, can you create an overview of the most significant contributors by:
+
+1. Occupation
+2. Employer
+3. State
+4. Rate over Time
+
+In addition to a visualization for each, please include a brief summary of your findings. 

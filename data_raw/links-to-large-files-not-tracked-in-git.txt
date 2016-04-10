@@ -1,0 +1,7 @@
+Links to large files not tracked in Git
+
+Democrats
+ftp://ftp.fec.gov/FEC/Presidential_Map/2016/P00000002/P00000002-ALL.zip
+
+Sanders
+ftp://ftp.fec.gov/FEC/Presidential_Map/2016/P60007168/P60007168-ALL.zip
