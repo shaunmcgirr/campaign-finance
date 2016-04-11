@@ -20,3 +20,4 @@ vignettes/*.pdf
 
 # Heavy CSV files
 data_raw/*.csv
+.Rproj.user

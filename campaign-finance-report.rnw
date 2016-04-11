@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{parskip}
+\usepackage{graphicx}
+\setlength{\parskip}{2mm plus1mm minus1mm}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+\title{2016 US Presidential Campaign Finance Analysis}
+\author{Shaun McGirr}
+\maketitle
+
+\section{Brief}
+
+Taking the 2016 US Federal Presidential Election Dataset for Bernie Sanders, located at http://fec.gov/disclosurep/PDownload.do, can you create an overview of the most significant contributors by:
+
+1. Occupation
+2. Employer
+3. State
+4. Rate over Time
+
+In addition to a visualization for each, please include a brief summary of your findings. 
+
+\section{Visualisations}
+
+\subsection{Occupation}
+\emph{Summary: Almost a third of Sanders' donations are from contributors declaring themselves as not employed or retired. Clinton's top ten sources of donations by occupation show why she is the `establishment' candidate. The third-most popular occupation amongst Clinton contributors is `not filling in forms properly'.}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lrlr}
+  \hline
+  \multicolumn{2}{c}{CLINTON} & \multicolumn{2}{c}{SANDERS} \\
+  \hline
+Occupation & Percentage & Occupation & Percentage \\ 
+  \hline
+ATTORNEY & 10.3 & NOT EMPLOYED & 27.9 \\ 
+RETIRED & 9.5 & RETIRED & 4.6 \\ 
+NOT GIVEN & 5.6 & INFO REQUESTED & 3.0 \\ 
+HOMEMAKER & 3.8 & ATTORNEY & 2.6 \\ 
+CONSULTANT & 2.9 & PHYSICIAN & 2.5 \\ 
+LAWYER & 2.8 & SOFTWARE ENGINEER & 2.2 \\ 
+CEO & 2.5 & ENGINEER & 1.8 \\ 
+INFO REQUESTED & 2.4 & PROFESSOR & 1.6 \\ 
+PHYSICIAN & 2.1 & TEACHER & 1.6 \\ 
+PRESIDENT & 2.1 & CONSULTANT & 1.0 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+\subsection{Employer}
+\emph{Summary: The quality of employer data is quite poor, though it is worse for Sanders (many are employed by `Mr.' or by `Ms.'). About 45\% of contributions to Clinton don't have an identifiable employer (because the contributor is self-employed, or more commonly not in the work force) while the same quantity for Sanders is just over 50\%. Excluding all these contributions, the two candidates are just as `in the pocket' of private interests as each other: Clinton simply takes more of her total from banks, law firms and her previous employers (US Government and State Department) while Sanders derives more of his support from tech companies, public universities, and weapons manufacturers.} \\
+
+\textbf{Top 20 employers by the size of their employees' contributions, for known organisations} \\
+
+\textbf{CLINTON:}
+\begin{enumerate}
+\item MORGAN \& MORGAN \item  DLA PIPER LLP \item  MORGAN STANLEY \item  STANFORD UNIVERSITY \item  GOOGLE \item  PAUL WEISS RIFKIND WHARTON \& GARRISON \item  CORNING INC. \item  AKIN GUMP STRAUSS HAUER \& FELD LLP \item  U.S. DEPARTMENT OF STATE \item  HARVARD UNIVERSITY \item  COLUMBIA UNIVERSITY \item  SKADDEN ARPS SLATE MEAGHER \& FLOM LLP \item  LATHAM \& WATKINS LLP \item  CANTOR FITZGERALD \item  KIRKLAND \& ELLIS LLP \item  GREENBERG TRAURIG LLP \item  CREATIVE ARTISTS AGENCY \item  JPMORGAN CHASE \item  WELLS FARGO \item  U.S. GOVERNMENT
+\end{enumerate}
+
+\textbf{SANDERS:}
+\begin{enumerate}
+\item GOOGLE  \item  MICROSOFT \item  IBM \item  GOOGLE, INC. \item  USPS \item  APPLE \item  KAISER PERMANENTE \item  AMAZON.COM \item  AT\&T \item  BOEING \item  UCLA \item  US NAVY \item  GOOGLE INC. \item  UNIVERSITY OF WASHINGTON \item  UNIVERSITY OF MICHIGAN \item  STATE OF CALIFORNIA \item  STANFORD UNIVERSITY \item  HARVARD UNIVERSITY \item  LOCKHEED MARTIN \item  APPLE INC.
+\end{enumerate}
+
+\section{State}
+
+Time for a map.
+
+
+\section{Rates over time}
+
+Compare `bumps' in donations to key events in the campaign so far.
+
+\end{document}
